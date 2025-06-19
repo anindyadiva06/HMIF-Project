@@ -1,4 +1,4 @@
-# ![Logo HMIF](gamadhikari.png) 
+<h1><img src="gamadhikari.png" alt="Logo HMIF" width="40" style="vertical-align: middle;"/></h1>
 
 **HMIF Universitas Jenderal Soedirman** adalah sebuah website untuk **Kabinet Gamadhikari** yang dibangun sebagai bentuk tugas akhir mata kuliah **Web Design**.  
 Website ini dirancang untuk menjadi sarana informasi yang mencerminkan identitas, program kerja, serta semangat kolaboratif dari Himpunan Mahasiswa Informatika (HMIF) UNSOED.
@@ -29,7 +29,6 @@ Website ini dirancang untuk menjadi sarana informasi yang mencerminkan identitas
 ## 🛠️ Teknologi yang Digunakan
 
 - HTML5, CSS3, JavaScript
-- Bootstrap (jika digunakan)
-- PHP (jika ada logic backend)
+- PHP 
 
 © 2023 – *Website ini dibuat untuk memenuhi tugas akhir mata kuliah Web Design.*
