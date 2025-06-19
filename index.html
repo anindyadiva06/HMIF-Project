@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="shortcut icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>HMIF UNSOED</title>
+    
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <div class="fContainer">
+        <!-- TOPBAR -->
+        <nav class="wrapper">
+            <div class="logo">
+                <div><img src="logo.png" style="width: 60px;" alt=""></div>
+                <div class="title">Himpunan Mahasiswa Informatika Universitas Jenderal Soedirman</div>
+            </div>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Beranda</a></li>
+                <li><a href="dosen.html">Dosen</a></li>
+                <li><a href="divisi.html">Divisi</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Profil 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="sejarah.html">Sejarah HMIF</a>
+                    <a href="kabinet.html">Kabinet</a>
+                    </div>
+                </div>
+                <li><a href="lvi.html"><i>La Vue IF</i></a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Contact Us 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="contact.html">Contact</a>
+                      <a href="team.html">Team</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <!-- BANNER HIMA -->
+        <section class="banner tile">
+            <h1>KABINET GAMADHIKARI</h1>
+            <a href="login.html">LOG IN</a>
+        </section>
+        <!-- HOME PAGE -->
+        <div class="filosofi tile">
+                <div class="kirihome tile">
+                    <img src="gamadhikari.png" width="60%">
+                </div>
+                <div class="kananhome tile">
+                <div class="gamadhikari"><h1>GAMADHIKARI</h1></div> 
+                    <div class="konten">
+                        <p class="konten">
+                            <p ><h2>Arti Gamadhikari-</h2></p>
+                            Memiliki arti perjalanan istimewa, dengan harapan semoga HMIF selama satu periode ini pengurusnya menjalani perjalanan dengan istimewa,
+                            dengan perjalanan yang mereka lalui sampai akhir mereka merasa kalau perjalanan mereka itu istimewa <br>
+                        
+                            <p class="filos"><h2>Filosofi Logo-</h2></p>
+                            Burung merupakan hewan yang melambangkan sebuah perjalanan panjang. Hal ini menginterpretasikan perjalanan istimewa yang akan HMIF 
+                            lewati selama satu kepengurusan. 8 gerigi mewakili 8 divisi HMIF Unsoed yang terus bergerak dan bekerja keras terus menerus untuk 
+                            mencapai tujuan bersama. Warna biru melambangkan hubungan profesionalitas, percaya diri, kecerdasan dan simbol kekuatan. Sedangkan 
+                            warna kuning melambangkan kreatifitas, kecerdasan, inovatif dan bijaksana yang harapannya bisa dimiliki oleh pengurus HMIF Unsoed 2023.
+                        </p>
+                
+                    </div>
+                </div>
+        </div>
+        <!-- SCRIPT ANIMASI -->
+        <script>
+            let elementsArray = document.querySelectorAll(".tile");
+            console.log(elementsArray);
+            window.addEventListener('scroll', fadeIn ); 
+            function fadeIn() {
+                for (var i = 0; i < elementsArray.length; i++) {
+                    var elem = elementsArray[i]
+                    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+                    if (distInView < 0) {
+                        elem.classList.add("inView");
+                    } else {
+                        elem.classList.remove("inView");
+                    }
+                }
+            }
+            fadeIn();
+          </script>
+        <!-- FOOTER -->
+            <div class="footer">
+                <div class="footer-content">
+                    <p class="footer-title">Kabinet Gamadhikari - HMIF Unsoed 2023</p>
+                    <p class="footer-isi">Social Media HMIF Unsoed</p>
+                    <div class="social-media">
+                    <ul class="sosmed">
+                        <li><a href="https://youtube.com/@HMIFUnsoed"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@hmifunsoed?_t=8cd3JTBdD73&_r=1"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                        <li><a href="https://instagram.com/hmifunsoed?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram fa-2x"></i></a></li>
+                    </ul>
+                </div>
+                <div class="cop">
+                <small>Copyright &copy; 2023 - Eka, Diva, Athifa. All Rights Reserved.</small> 
+            </div>
+
+    </div>
+    
+</body>
+</html>

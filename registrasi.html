@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="transisi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+    <script src="registrasi.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container-fluid tile">
+    <div class="wrapper">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="name">
+            <br> <center> Sign Up </center> <br>
+        </div>
+        <form method="post" action="index.html" name="login" onsubmit="return cek()">
+            <div class="form-field">
+                <input type="text" name="Name" id="Name" placeholder="Full Name">
+            </div>
+            <div class="form-field">
+                <input type="Email" name="Email" id="Email" placeholder="Email Address">
+            </div>
+            <div class="form-field">
+                <input type="password" name="pass" id="pass" placeholder="Password">
+            </div>
+            <div class="cb">
+                <input type="checkbox" name="Rmb" id="rmb"> I confirm that all data are correct</div>
+            <div> <br> </div>
+                <button class="btn">Register</button>
+        </form>
+        <div class="link" >
+            Already Have an Account? <br><a href="login.html">Login Now</a>
+        </div>
+    </div>
+    </div>
+    <script>
+        let elementsArray = document.querySelectorAll(".tile");
+        console.log(elementsArray);
+        window.addEventListener('scroll', fadeIn ); 
+        function fadeIn() {
+            for (var i = 0; i < elementsArray.length; i++) {
+                var elem = elementsArray[i]
+                var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+                if (distInView < 0) {
+                    elem.classList.add("inView");
+                } else {
+                    elem.classList.remove("inView");
+                }
+            }
+        }
+        fadeIn();
+    </script>
+</body>
+</html>

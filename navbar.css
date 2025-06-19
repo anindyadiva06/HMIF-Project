@@ -1,0 +1,132 @@
+*, html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins";
+}
+
+.wrapper{
+	width: 100%;
+	height: 80px;
+	position:fixed;
+	z-index: 2;
+	background-color:#053F5C;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+}
+.logo {
+	margin: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+    justify-content: center;
+}
+
+.logo > img{
+
+}
+
+.title{
+	margin: 10px;
+	color: rgb(255, 255, 255);
+	font-size: medium;
+	
+}
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	margin: 30px;
+	overflow: hidden;
+	display: fixed;
+}
+.navigation > li {
+	list-style-type: none;
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	margin: 5px;
+}
+.navigation > li > a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+	display: inline-block;
+}
+.navigation > li > a:hover {
+		background-color: #FFC300 ;
+		color: #ffffff;
+		display: inline-block;
+}
+.active {
+	color :rgba(255, 255, 255, 0.6);
+	background-color: #FFC300 ;
+	display: inline-block;
+	padding: auto;
+	margin: auto;
+}
+.dropdown {
+	float: left;
+	overflow: hidden;
+	margin: 5px;
+}
+.dropdown .dropbtn {
+	font-size: medium;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 12px;
+	background-color: inherit;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #FFC300;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 140px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+	color:#03A9F4;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.tile {
+    -webkit-transform: translateY(50px) translateZ(0);
+    transform: translateY(50px) translateZ(0);
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    opacity: 0;
+}
+.bottom-right.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) translateZ(0);
+    transform: translateY(0px) translateZ(0);
+}
+.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) translateZ(0);
+    transform: translateY(0px) translateZ(0);
+}

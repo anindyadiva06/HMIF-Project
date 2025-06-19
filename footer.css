@@ -1,0 +1,69 @@
+/* FOOTER */
+*, html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins";
+}
+.footer{
+	background-color: #053F5C;
+	height: auto;
+	width: auto;
+	text-align: center;
+	padding-bottom: 0px;
+    align-items: center;
+    position:relative;
+}
+.cop{
+	padding-top:40px;
+	padding-bottom: 10px;
+}
+.footer-content {
+	color: aliceblue;
+	padding: 25px;
+	padding-bottom: 0px;
+	text-align: center;
+	align-items: center;
+    justify-content: center;
+}
+.footer-title{
+	font-weight:550;
+	font-size: larger;
+}
+.footer-isi{
+	padding: 20px;
+	text-align: center;
+	align-items: center;
+}
+.social-media{
+	text-align: center;
+	align-items: center;
+}
+.sosmed{
+    display:flex;
+    list-style:none;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.sosmed li{
+    height:40px;
+    width:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    cursor:pointer;
+    position:relative;
+}
+.fa-tiktok {
+	background: url('https://api.iconify.design/fa-brands/tiktok.svg?color=%23eaeaea&width=27') no-repeat center center / contain;
+	content: url('https://api.iconify.design/fa-brands/tiktok.svg?color=%23eaeaea&width=27');
+}
+.fa-youtube{
+	background: url('https://api.iconify.design/fa/youtube-play.svg?color=%23eaeaea&width=32') no-repeat center center / contain;
+	content: url('https://api.iconify.design/fa/youtube-play.svg?color=%23eaeaea&width=32');
+}
+.fa-instagram{
+	background: url('https://api.iconify.design/fa/instagram.svg?color=%23eaeaea&width=30') no-repeat center center / contain;
+	content: url('https://api.iconify.design/fa/instagram.svg?color=%23eaeaea&width=30');
+}
